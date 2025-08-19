@@ -9,7 +9,7 @@ from aiogram.types import Message
 
 load_dotenv(find_dotenv())
 
-TOKEN = getenv('TOKEN')
+TOKEN = getenv("TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
