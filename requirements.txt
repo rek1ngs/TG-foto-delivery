@@ -1,0 +1,5 @@
+asyncio
+aiogram
+Pillow
+python-dotenv
+io
