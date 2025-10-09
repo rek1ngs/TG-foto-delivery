@@ -7,7 +7,7 @@ def watermark(image_bytes: BytesIO):
     draw = ImageDraw.Draw(txt_layer)
 
     w, h = watermark_image.size
-    font_size = int(h / 2)
+    font_size = int(h / 20)
     x, y = int(w / 2), int(h / 2)
 
     try:
