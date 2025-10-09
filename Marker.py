@@ -13,7 +13,7 @@ def watermark(image_bytes: BytesIO):
     try:
         font = ImageFont.truetype("arial.ttf", font_size)
     except OSError:
-        font = ImageFont.truetype("/Library/Fonts/Arial.ttf", 100)
+        font = ImageFont.load_default()
 
     draw.text((x, y), "Mellon", fill=(0, 0, 0,255), font=font, anchor='ms')
 
