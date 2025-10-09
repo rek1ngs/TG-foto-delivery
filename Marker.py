@@ -11,7 +11,7 @@ def watermark(image_bytes: BytesIO):
     x, y = int(w / 2), int(h / 2)
 
     try:
-        font = ImageFont.truetype("/usr/share/fonts/truetype/msttcorefonts/Arial.ttf", 100)
+        font = ImageFont.truetype("DejaVuSans.ttf", font_size)
     except OSError:
         font = ImageFont.load_default()
 
