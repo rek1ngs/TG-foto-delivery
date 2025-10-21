@@ -37,7 +37,6 @@ tg-foto-delivery/
 │   ├── __init__.py
 │   └── photo_handler.py
 ├── requirements.txt       # Project dependencies
-├── .env.example           # Example of environment variables
 ├── .gitignore
 ├── Dockerfile
 └── README.md
