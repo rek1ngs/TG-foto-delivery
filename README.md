@@ -7,11 +7,11 @@ Created for fast image processin and clean architecture.
 
 ## 🚀 Features
 
-- 📥 Receive images directly from Telegram users  
-- 🖋️ Add watermark with **Pillow (PIL)**  
-- ⚡ Instant image return to the user  
-- ⚙️ Configurable via `.env` file  
-- 🧱 Docker-ready deployment  
+- Receive images directly from Telegram users  
+- Add watermark with **Pillow (PIL)**  
+- Instant image return to the user  
+- Configurable via `.env` file  
+- Docker-ready deployment  
 
 ---
 
@@ -45,24 +45,24 @@ tg-foto-delivery/
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/<your-username>/tg-foto-delivery.git
 cd tg-foto-delivery
 ```
 
-### 2️⃣ Create a Virtual Environment
+### 2. Create a Virtual Environment
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
-### 3️⃣ Install Dependencies
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Create `.env` File
+### 4. Create `.env` File
 Copy `.env.example` to `.env` and update the values:
 
 ```
@@ -105,13 +105,13 @@ docker stop tg-foto-delivery
 ## 🧑‍💻 Author
 
 **Renars Masaļskis**  
-🎓 Riga Technical University — Computer Systems  
-🌍 [GitHub Profile](https://github.com/rek1ngs)  
-💬 Passionate about **DevOps, Cloud, and Python development**
+Riga Technical University — Computer Systems  
+[GitHub Profile](https://github.com/rek1ngs)  
+Passionate about **DevOps, Cloud, and Python development**
 
 ---
 
-## 🌟 Support
+## Support
 
 If you find this project useful, please give it a ⭐ on GitHub!  
 It helps others discover it and motivates further development.
