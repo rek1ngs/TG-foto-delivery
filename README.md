@@ -104,18 +104,11 @@ docker stop tg-foto-delivery
 
 ---
 
-## 🪪 License
-
-This project is licensed under the **MIT License**.  
-See the [LICENSE](LICENSE) file for more details.
-
----
-
 ## 🧑‍💻 Author
 
 **Renars Masaļskis**  
 🎓 Riga Technical University — Computer Systems  
-🌍 [GitHub Profile](https://github.com/<your-username>)  
+🌍 [GitHub Profile](https://github.com/rek1ngs)  
 💬 Passionate about **DevOps, Cloud, and Python development**
 
 ---
