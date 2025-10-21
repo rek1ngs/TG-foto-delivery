@@ -22,7 +22,6 @@ Created for fast image processin and clean architecture.
 | **Python 3.12+** | Programming language |
 | **Aiogram 3.x** | Asynchronous Telegram bot framework |
 | **Pillow (PIL)** | Image manipulation and watermarking |
-| **FastAPI** | Health endpoints |
 | **Docker** | Containerized environment |
 
 ---
