@@ -2,9 +2,12 @@ import logging
 from os import getenv
 import asyncio
 from dotenv import load_dotenv, find_dotenv
-from aiogram import Bot, Dispatcher, Router, F
+from aiogram import Bot, Dispatcher, Router
 from aiogram.types import Message
 from handler import waterMark
+from prometheus_client import start_http_server, Counter
+import time
+
 
 load_dotenv(find_dotenv())
 
@@ -14,13 +17,13 @@ bot = Bot(token=TOKEN)
 dp = Dispatcher()
 rt = Router()
 
-# @dp.message(F.text)
-# async def echo(message: Message):
-#     await bot.send_message(
-#         chat_id = message.chat.id,
-#         text= "wait"
-#     )
-#     await message.answer(text=message.text)
+start_http_server(8000)
+REQUEST_COUNTER = Counter('telegram_bot_requests_total', 'Total number of requests received by the Telegram bot')
+
+async def metrics():
+    while True:
+        REQUEST_COUNTER.inc()
+        await asyncio.sleep(5)
 
 async def main():
 
@@ -31,7 +34,6 @@ async def main():
     logging.basicConfig(level=logging.INFO)
     dp.include_router(rt)
     await dp.start_polling(bot)
-
 
 if __name__ == "__main__":
     asyncio.run(main())
